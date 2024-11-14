@@ -1,9 +1,11 @@
 import React from 'react';
 import ServiceBg from '../Assets/service-bg.png'
+import ThingsToDo from './ThingsTodo';
 
 const Service = () => {
   return (
-    <div className="bg-gradient-to-b from-blue-600 to-[#0b1527] py-12 px-6 lg:px-20">
+    <div>
+    <div className="bg-gradient-to-b from-blue-600 to-blue-800 py-12 px-6 lg:px-20">
         <nav className="absolute mt-2 top-0 left-0 w-full px-8 py-6 flex justify-between items-center bg-transparent text-white">
         <div className="font-bold text-xl">
           <h1 className="text-2xl">MoutingHutt</h1>
@@ -22,7 +24,7 @@ const Service = () => {
 
         {/* Login/Signup Button */}
         <div className="font-semibold">
-          <a href="/" className="hover:bg-gray-200 hover:text-black bg-white text-gray-700 py-2 px-4 rounded-full">
+          <a href="/login" className="hover:bg-cyan-700 hover:text-black bg-slate-100 bg-opacity-40 text-white py-2 px-4 rounded-full">
             Login / Signup
           </a>
         </div>
@@ -59,6 +61,8 @@ const Service = () => {
           </div>
         </div>
       </section>
+    </div>
+      <ThingsToDo />
     </div>
   )
 }

@@ -4,13 +4,17 @@ import TourismSection from './Tourism';
 import TourPackagesSection from './TourPackagesSection';
 import Testimonial from './Testimonial';
 import Blog from './Blog';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   return (
-    <>
+    <div>
     <div className="relative w-full h-screen overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Navbar */}
-      <nav className="absolute top-0 left-0 w-full px-8 py-6 flex justify-between items-center bg-transparent text-white">
+      <nav className="absolute mt-2 top-0 left-0 w-full px-8 py-6 flex justify-between items-center bg-transparent text-white">
         <div className="font-bold text-xl">
           <h1 className="text-2xl">MoutingHutt</h1>
         </div>
@@ -51,7 +55,7 @@ const Home = () => {
     <TourPackagesSection />
     <Testimonial />
     <Blog />
-    </>
+    </div>
     
   );
 };
