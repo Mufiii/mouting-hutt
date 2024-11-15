@@ -2,7 +2,7 @@ import React from 'react'
 import memories1 from '../Assets/memories1.jpg';
 import memories2 from '../Assets/memories2.webp';
 
-const Blog = () => {
+const BlogCard = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  bg-gradient-to-b from-blue-900 to-blue-950 px-4">
       {/* Header */}
@@ -60,4 +60,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default BlogCard

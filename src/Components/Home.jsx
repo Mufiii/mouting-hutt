@@ -3,8 +3,9 @@ import bgImage from '../Assets/Login-bg.png';
 import TourismSection from './Tourism';
 import TourPackagesSection from './TourPackagesSection';
 import Testimonial from './Testimonial';
-import Blog from './Blog';
+import Blog from './BlogCard';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const Home = () => {
 
@@ -12,33 +13,10 @@ const Home = () => {
 
   return (
     <div>
+      <div className="fixed top-10 left-0 right-0 z-10">
+        <Navbar />
+      </div>
     <div className="relative w-full h-screen overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${bgImage})` }}>
-      {/* Navbar */}
-      <nav className="absolute mt-2 top-0 left-0 w-full px-8 py-6 flex justify-between items-center bg-transparent text-white">
-        <div className="font-bold text-xl">
-          <h1 className="text-2xl">MoutingHutt</h1>
-        </div>
-
-        {/* Navigation Links inside a rounded box */}
-        <div className="flex items-center justify-between bg-slate-100 bg-opacity-40 text-white py-2 px-8 rounded-full w-2/5">
-          <button className="hover:text-gray-300 text-white font-semibold">Home</button>
-          <button className="hover:text-gray-300 text-white font-semibold">Packages</button>
-          <button className="hover:text-gray-300 text-white font-semibold">Services</button>
-          <button className="hover:text-gray-300 text-white font-semibold">Blog</button>
-          <button className="hover:text-gray-300 text-white font-semibold">About</button>
-          <button className="hover:text-gray-300 text-white font-semibold">Contact</button>
-          
-        </div>
-
-        {/* Login/Signup Button */}
-        <div className="font-semibold">
-          <a href="/" className="hover:bg-gray-200 hover:text-black bg-white text-gray-700 py-2 px-4 rounded-full">
-            Login / Signup
-          </a>
-        </div>
-      </nav>
-
-      {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
           Extraordinary natural and cultural charm

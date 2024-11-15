@@ -46,9 +46,11 @@ const PkgDetails = () => {
   ];
 
   return (
-    <>
-      <Navbar />
-      <div className="mt-8 bg-gradient-to-b from-blue-700 to-blue-900 text-white py-16">
+    <div>
+       <div className="fixed top-10 left-0 right-0 z-10">
+        <Navbar />
+      </div>
+      <div className="bg-gradient-to-b from-blue-700 to-blue-900 text-white py-16">
         <h2 className="text-4xl font-serif font-semibold text-center mb-4">Tour Packages</h2>
         <p className="text-center text-lg mb-12">
           Trip packages combine lodging, activities, and transport for an easy, all-in-one travel experience.
@@ -101,7 +103,7 @@ const PkgDetails = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
