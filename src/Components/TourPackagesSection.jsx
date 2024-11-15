@@ -3,6 +3,7 @@ import TourPackage from '../Components/Package';
 import groupTrip from '../Assets/group-tour.jpeg';
 import javaTrip from '../Assets/java-tour.jpg';
 import soloTrip from '../Assets/solo-trip.webp';
+import { useNavigate } from 'react-router-dom';
 
 const packages = [
   {
@@ -29,6 +30,9 @@ const packages = [
 ];
 
 const TourPackagesSection = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gradient-to-b from-blue-900 to-blue-800 py-12 px-6 lg:px-20">
       {/* Section Header */}
@@ -58,7 +62,9 @@ const TourPackagesSection = () => {
 
       {/* View More Button */}
       <div className="mt-10 flex justify-center">
-        <button className="bg-black text-white font-bold py-3 px-8 rounded-xl hover:bg-gray-800 transition duration-300">
+        <button
+          onClick={()=> navigate('/packages') } 
+          className="bg-black text-white font-bold py-3 px-8 rounded-xl hover:bg-gray-800 transition duration-300">
           View More
         </button>
       </div>

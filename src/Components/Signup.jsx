@@ -1,7 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import bgImage from '../Assets/Login-bg.png';
 
 const Signup = () => {
+  const navigate = useNavigate();
+
+  const handleSignup = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    navigate('/login'); // Redirect to the Login page
+  };
+
   return (
     <div className='w-full h-screen overflow-hidden relative'>
       <img 
@@ -9,12 +17,10 @@ const Signup = () => {
         alt="Login Background" 
         className='w-full h-full object-cover' 
       />
-      
       <div className='absolute top-1/2 left-1/2 w-[1000px] h-[600px] bg-white flex transform -translate-x-1/2 -translate-y-1/2 shadow-lg'>
-        
         <div className='flex-1 flex flex-col justify-center p-10'>
           <h2 className='text-gray-800 font-sans font-bold text-2xl mb-6'>Signup</h2>
-          <form>
+          <form onSubmit={handleSignup}>
             <div className='mb-4'>
               <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="fullName">
                 Full Name
@@ -60,7 +66,7 @@ const Signup = () => {
               />
             </div>
             <div className='flex items-center justify-between'>
-              <button 
+              <button
                 className='bg-blue-950 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-52' 
                 type="submit">
                 Sign Up
@@ -81,4 +87,4 @@ const Signup = () => {
   );
 };
 
-export default Signup ;
+export default Signup;

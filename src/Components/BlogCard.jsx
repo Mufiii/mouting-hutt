@@ -1,8 +1,12 @@
 import React from 'react'
 import memories1 from '../Assets/memories1.jpg';
 import memories2 from '../Assets/memories2.webp';
+import { useNavigate } from 'react-router-dom';
 
 const BlogCard = () => {
+
+const navigate = useNavigate();
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  bg-gradient-to-b from-blue-900 to-blue-950 px-4">
       {/* Header */}
@@ -31,10 +35,9 @@ const BlogCard = () => {
           </div>
         </div>
 
-        {/* Blog Card 2 */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-md h-96 mx-auto">
           <img
-            className="w-full h-60 object-cover" // Increased height for the image
+            className="w-full h-60 object-cover" 
             src={memories2}
             alt="Blog Image 2"
           />
@@ -52,7 +55,9 @@ const BlogCard = () => {
 
       {/* View More Button */}
       <div className="mt-8">
-        <button className="bg-black text-white px-6 py-2 rounded-xl hover:bg-gray-800 transition">
+        <button
+          onClick={()=> navigate('/blog')} 
+          className="bg-black text-white px-6 py-2 rounded-xl hover:bg-gray-800 transition">
           view more
         </button>
       </div>

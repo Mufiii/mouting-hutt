@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center justify-between bg-slate-100 bg-opacity-40 text-white py-2 px-8 rounded-full w-2/5">
-          <button className="hover:text-gray-300 text-white font-semibold" onClick={()=> navigate('/')}>Home</button>
+          <button className="hover:text-gray-300 text-white font-semibold" onClick={()=> navigate('/home')}>Home</button>
           <button className="hover:text-gray-300 text-white font-semibold" onClick={()=> navigate('/packages')}>Packages</button>
           <button className="hover:text-gray-300 text-white font-semibold" onClick={()=> navigate('/services')}>Services</button>
           <button className="hover:text-gray-300 text-white font-semibold" onClick={()=> navigate('/blog')}>Blog</button>
@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
 
         <div className="font-semibold">
-          <a href="/login" className="hover:bg-cyan-700 hover:text-black bg-slate-100 bg-opacity-40 text-white py-2 px-4 rounded-full">
+          <a href="/" className="hover:bg-cyan-700 hover:text-black bg-slate-100 bg-opacity-40 text-white py-2 px-4 rounded-full">
             Login / Signup
           </a>
         </div>

@@ -4,13 +4,13 @@ import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Home from './Components/Home';
 import Service from './Components/Service';
-import Testimonial from './Components/Testimonial';
-import Blog from './Components/BlogCard';
-import ThingsToDo from './Components/ThingsTodo';
 import PkgDetails from './Components/PkgDetails';
 import Food from './Components/Food';
 import Navbar from './Components/Navbar';
 import Blogs from './Blogs';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import About from './About';
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <BrowserRouter> 
         <Routes>
           <Route path='login' element={<Login />} />
-          <Route path='signup' element={<Signup />} />
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Signup />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/services' element={<Service />} />
           {/* <Route path='/testimonial' element={<Testimonial />} />
           <Route path='/blogcard' element={<BlogCard />} />
@@ -28,6 +28,9 @@ function App() {
           <Route path='/food' element={<Food />} />
           <Route path='/nav' element={<Navbar />} />
           <Route path='/blog' element={<Blogs />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/footer' element={<Footer />} />
+          <Route path='/about' element={<About />} />
 
           
         </Routes>

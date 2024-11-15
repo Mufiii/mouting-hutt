@@ -2,6 +2,8 @@ import React from 'react';
 import blog1 from '../src/Assets/blog1.png';
 import blog2 from '../src/Assets/blog2.png';
 import blogIcon from '../src/Assets/blogIcon.png';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 const Blogs = () => {
   const stories = [
@@ -33,28 +35,38 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-blue-700 to-blue-900 p-10">
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-white text-3xl font-bold">Read all the Mouting Hutt stories here</h2>
-        <img src={blogIcon} alt="Plane Icon" className="w-56 h-auto" /> {/* Increased icon size */}
+    <div>
+       <div className="fixed top-10 left-0 right-0 z-10">
+        <Navbar />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {stories.map((story, index) => (
-          <div
-            key={index}
-            className="max-w-xs bg-gray-100 rounded-lg shadow-lg overflow-hidden" // Reduced card size
-          >
-            <img src={story.image} alt="Story" className="w-full h-40 object-cover" /> {/* Reduced image height */}
-            <div className="p-4">
-              <h3 className="text-md font-bold text-gray-800 mb-2">{story.title}</h3>
-              <p className="text-xs text-gray-600 mb-4">{story.description}</p> {/* Reduced text size */}
-              <button className="bg-black text-white px-3 py-1.5 rounded hover:bg-gray-800 transition duration-200">
-                Read Full Story
-              </button>
+    <div className="bg-gradient-to-b from-blue-700 to-blue-950 p-10 flex justify-center">
+      <div className="max-w-5xl w-full">
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-white text-4xl font-bold">Read all <br></br>the Mouting Hutt<br></br> stories here</h2>
+          <img src={blogIcon} alt="Plane Icon" className="w-96 h-auto" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+          {stories.map((story, index) => (
+            <div
+              key={index}
+              className="max-w-xs bg-gray-100 rounded-lg shadow-lg overflow-hidden"
+            >
+              <img src={story.image} alt="Story" className="w-full h-40 object-cover" />
+              <div className="p-4">
+                <h3 className="text-sm font-bold text-gray-800 mb-2">{story.title}</h3>
+                <p className="text-xs text-gray-600 mb-4">{story.description}</p>
+                <button className="bg-black text-white px-3 py-1.5 rounded hover:bg-gray-800 transition duration-200">
+                  Read Full Story
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+    </div>
+    <div>
+      <Footer />
+    </div>
     </div>
   );
 };

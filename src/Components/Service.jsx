@@ -2,8 +2,13 @@ import React from 'react';
 import ServiceBg from '../Assets/service-bg.png'
 import ThingsToDo from './ThingsTodo';
 import Navbar from './Navbar';
+import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 
 const Service = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="fixed top-10 left-0 right-0 z-10">
@@ -29,7 +34,7 @@ const Service = () => {
                 been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
               </p>
-              <button className="bg-black text-white py-2 px-6 rounded-lg">View More</button>
+              <button onClick={()=> navigate('/food')} className="bg-black text-white py-2 px-6 rounded-lg">View More</button>
             </div>
 
             <div className="flex justify-center">
@@ -44,6 +49,7 @@ const Service = () => {
       </section>
     </div>
       <ThingsToDo />
+      <Footer/>
     </div>
   )
 }

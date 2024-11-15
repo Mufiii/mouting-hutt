@@ -1,7 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import bgImage from '../Assets/Login-bg.png';
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault(); // Prevent default form submission
+    // Add your authentication logic here (if any)
+    navigate('/home'); // Redirect to the home page
+  };
+
   return (
     <div className='w-full h-screen overflow-hidden relative'>
       <img 
@@ -17,13 +26,13 @@ const Login = () => {
               <h2 className='text-white font-sans font-bold'>Login</h2>
             </div>
             <div className='flex pl-4 pt-10'>
-              <p className='font-sans font-semibold text-white'>Are you planning a quick getaway? then you are at the right door</p>
+              <p className='font-sans font-semibold text-white'>Are you planning a quick getaway? Then you are at the right door</p>
             </div>
           </div>
         </div>
 
         <div className='flex-1 flex flex-col justify-center p-10'>
-          <form>
+          <form onSubmit={handleLogin}>
             <div className='mb-4'>
               <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="email">
                 Email
@@ -48,7 +57,7 @@ const Login = () => {
             </div>
             <div className='flex items-center justify-between'>
               <button 
-                className='bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-52' // Added w-full for full width
+                className='bg-blue-950 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-52'
                 type="submit">
                 Login
               </button>

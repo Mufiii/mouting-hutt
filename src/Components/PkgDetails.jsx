@@ -5,6 +5,7 @@ import pkg3 from '../Assets/pkg3.png';
 import pkg4 from '../Assets/pkg4.png';
 import pkg5 from '../Assets/pkg5.png';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const PkgDetails = () => {
   const packages = [
@@ -102,6 +103,9 @@ const PkgDetails = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

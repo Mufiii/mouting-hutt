@@ -4,12 +4,12 @@ import TourismSection from './Tourism';
 import TourPackagesSection from './TourPackagesSection';
 import Testimonial from './Testimonial';
 import Blog from './BlogCard';
-import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
+
 
 const Home = () => {
 
-  const navigate = useNavigate();
 
   return (
     <div>
@@ -33,6 +33,7 @@ const Home = () => {
     <TourPackagesSection />
     <Testimonial />
     <Blog />
+    <Footer />
     </div>
     
   );
