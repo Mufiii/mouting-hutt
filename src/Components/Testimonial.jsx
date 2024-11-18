@@ -1,85 +1,122 @@
-import React from 'react'
-import avatar from '../Assets/avatar.png'
+import React from "react";
 
 const Testimonial = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-800 to-blue-900">
-      {/* Testimonial Card */}
-      <div className="w-full max-w-4xl p-6 bg-opacity-25 bg-gray-500 text-white rounded-lg shadow-lg">
-        <div className="flex items-center space-x-4">
-          <img
-            className="w-12 h-12 rounded-full"
-            src={avatar}
-            alt="User avatar"
-          />
-          <span className="font-semibold text-lg">kevin</span>
-        </div>
-        <p className="mt-4 text-lg leading-relaxed">
-          This travel website is very informative and easy to use. I like how
-          they present various destination options and travel packages with
-          clear details. Offering pictures and destination descriptions helps me
-          decide where I want to visit. Additionally, the ability to compare
-          prices and reviews from other users is very helpful in decision
-          making.
-        </p>
+    <div>
+      <div className="bg-gradient-to-b from-blue-700 to-blue-900 py-5">
+        <div className="flex justify-center">
+          <div className="text-center mb-4 pb-2">
+            <i className="fas fa-quote-left text-white text-3xl" />
+          </div>
+          <div className="max-w-3xl w-full">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="px-4 py-5">
+                {/* Carousel */}
+                <div className="relative">
+                  {/* Carousel Items */}
+                  <div className="carousel-inner">
+                    {/* Item 1 */}
+                    <div className="carousel-item active">
+                      <div className="flex justify-center">
+                        <div className="max-w-2xl w-full">
+                          <div className="flex flex-col lg:flex-row">
+                            <div className="lg:w-1/3 flex justify-center">
+                              <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                className="rounded-full shadow-lg mb-4"
+                                alt="woman avatar"
+                                width="150"
+                                height="150"
+                              />
+                            </div>
+                            <div className="lg:w-2/3 text-center lg:text-left">
+                              <h4 className="text-xl font-semibold mb-4">
+                                Maria Smantha - Web Developer
+                              </h4>
+                              <p className="mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem. Est, exercitationem id ipsa ipsum laboriosam perferendis.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-        {/* Rating Stars */}
-        <div className="flex justify-center mt-4">
-          <div className="flex space-x-1">
-            {Array(5)
-              .fill(0)
-              .map((_, i) => (
-                <svg
-                  key={i}
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-yellow-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.905c.969 0 1.371 1.24.588 1.81l-3.973 2.872a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.539 1.118l-3.974-2.872a1 1 0 00-1.175 0l-3.974 2.872c-.784.57-1.838-.197-1.539-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.09 9.101c-.783-.57-.38-1.81.588-1.81h4.905a1 1 0 00.95-.69l1.516-4.674z" />
-                </svg>
-              ))}
+                    {/* Item 2 */}
+                    <div className="carousel-item">
+                      <div className="flex justify-center">
+                        <div className="max-w-2xl w-full">
+                          <div className="flex flex-col lg:flex-row">
+                            <div className="lg:w-1/3 flex justify-center">
+                              <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                className="rounded-full shadow-lg mb-4"
+                                alt="woman avatar"
+                                width="150"
+                                height="150"
+                              />
+                            </div>
+                            <div className="lg:w-2/3 text-center lg:text-left">
+                              <h4 className="text-xl font-semibold mb-4">
+                                Lisa Cudrow - Graphic Designer
+                              </h4>
+                              <p className="mb-4">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Item 3 */}
+                    <div className="carousel-item">
+                      <div className="flex justify-center">
+                        <div className="max-w-2xl w-full">
+                          <div className="flex flex-col lg:flex-row">
+                            <div className="lg:w-1/3 flex justify-center">
+                              <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp"
+                                className="rounded-full shadow-lg mb-4"
+                                alt="woman avatar"
+                                width="150"
+                                height="150"
+                              />
+                            </div>
+                            <div className="lg:w-2/3 text-center lg:text-left">
+                              <h4 className="text-xl font-semibold mb-4">
+                                John Smith - Marketing Specialist
+                              </h4>
+                              <p className="mb-4">
+                                At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia mollitia animi id laborum et dolorum fuga.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Carousel Controls */}
+                  <div className="absolute top-1/2 left-0 right-0 flex justify-between transform -translate-y-1/2 px-4">
+                    <button className="text-white bg-black bg-opacity-50 rounded-full p-2">
+                      <i className="fas fa-chevron-left" />
+                    </button>
+                    <button className="text-white bg-black bg-opacity-50 rounded-full p-2">
+                      <i className="fas fa-chevron-right" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="text-center mt-4 pt-2">
+              <i className="fas fa-quote-right text-white text-3xl" />
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Centered Arrows Outside of Testimonial */}
-      <div className="flex justify-center mt-6 space-x-20">
-        <button className="p-2 bg-opacity-20 bg-gray-300 hover:bg-blue-600 rounded-full">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-        <button className="p-2 bg-opacity-20 bg-gray-300 hover:bg-blue-600 rounded-full">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  )
+    </div >
+  );
 }
 
-export default Testimonial
+
+export default Testimonial;

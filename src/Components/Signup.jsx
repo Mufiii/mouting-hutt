@@ -12,10 +12,10 @@ const Signup = () => {
 
   return (
     <div className='w-full h-screen overflow-hidden relative'>
-      <img 
-        src={bgImage} 
-        alt="Login Background" 
-        className='w-full h-full object-cover' 
+      <img
+        src={bgImage}
+        alt="Login Background"
+        className='w-full h-full object-cover'
       />
       <div className='absolute top-1/2 left-1/2 w-[1000px] h-[600px] bg-white flex transform -translate-x-1/2 -translate-y-1/2 shadow-lg'>
         <div className='flex-1 flex flex-col justify-center p-10'>
@@ -25,52 +25,57 @@ const Signup = () => {
               <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="fullName">
                 Full Name
               </label>
-              <input 
-                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-                id="fullName" 
-                type="text" 
-                placeholder="Enter your full name" 
+              <input
+                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                id="fullName"
+                type="text"
+                placeholder="Enter your full name"
               />
             </div>
             <div className='mb-4'>
               <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="email">
                 Email Address
               </label>
-              <input 
-                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-                id="email" 
-                type="email" 
-                placeholder="Enter your email" 
+              <input
+                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                id="email"
+                type="email"
+                placeholder="Enter your email"
               />
             </div>
             <div className='mb-4'>
               <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="phone">
                 Phone Number
               </label>
-              <input 
-                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-                id="phone" 
-                type="tel" 
-                placeholder="Enter your phone number" 
+              <input
+                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                id="phone"
+                type="tel"
+                placeholder="Enter your phone number"
               />
             </div>
             <div className='mb-4'>
               <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="password">
                 Password
               </label>
-              <input 
-                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-                id="password" 
-                type="password" 
-                placeholder="Enter your password" 
+              <input
+                className='appearance-none border-b-2 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                id="password"
+                type="password"
+                placeholder="Enter your password"
               />
             </div>
-            <div className='flex items-center justify-between'>
-              <button
-                className='bg-blue-950 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-52' 
-                type="submit">
-                Sign Up
-              </button>
+            <div className="flex gap-2">
+              <div className='flex items-center justify-between'>
+                <button
+                  className='bg-blue-950 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-52'
+                  type="submit">
+                  Sign Up
+                </button>
+              </div>
+              <div className='flex items-center justify-between'>
+                <h6>Already have an Account <span className='text-blue-600' onClick={() => navigate('login')}>Login?</span></h6>
+              </div>
             </div>
           </form>
         </div>
