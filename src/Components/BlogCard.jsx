@@ -2,11 +2,11 @@ import React from 'react';
 
 // Sample data for blog posts
 const blogPosts = [
-  { id: 1, title: 'How to Use Tailwind CSS with React', date: 'Jan 20, 2024', image: 'https://via.placeholder.com/50' },
-  { id: 2, title: '10 CSS Tricks Every Developer Should Know', date: 'Jan 18, 2024', image: 'https://via.placeholder.com/50' },
-  { id: 3, title: 'The Future of Web Design in 2024', date: 'Jan 15, 2024', image: 'https://via.placeholder.com/50' },
-  { id: 4, title: 'Understanding Flexbox in CSS', date: 'Jan 10, 2024', image: 'https://via.placeholder.com/50' },
-  { id: 5, title: '5 Tools to Improve Your Web Development Workflow', date: 'Jan 5, 2024', image: 'https://via.placeholder.com/50' },
+  { id: 1, title: 'Exploring the Serene Trails of Himachal Pradesh', date: 'Jan 20, 2024', image: 'https://via.placeholder.com/50', profileImage: 'https://via.placeholder.com/50' },
+  { id: 2, title: 'The Best Hiking Routes in the Hills', date: 'Jan 18, 2024', image: 'https://via.placeholder.com/50', profileImage: 'https://via.placeholder.com/50' },
+  { id: 3, title: 'Your Perfect Stay in Himachal: Cottage Life', date: 'Jan 15, 2024', image: 'https://via.placeholder.com/50', profileImage: 'https://via.placeholder.com/50' },
+  { id: 4, title: 'The Beauty of Himachal’s Mountainous Landscape', date: 'Jan 10, 2024', image: 'https://via.placeholder.com/50', profileImage: 'https://via.placeholder.com/50' },
+  { id: 5, title: 'What to Pack for Your Cottage Stay in Himachal', date: 'Jan 5, 2024', image: 'https://via.placeholder.com/50', profileImage: 'https://via.placeholder.com/50' },
 ];
 
 const BlogCard = () => {
