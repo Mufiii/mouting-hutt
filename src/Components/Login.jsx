@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import bgImage from '../Assets/Login-bg.png';
 
 const Login = ({ isOpen, setIsOpen }) => {
@@ -106,7 +106,7 @@ const Login = ({ isOpen, setIsOpen }) => {
                 Don't have an account yet?
               </h6>
               <h6 className="text-blue-950 cursor-pointer hover:text-blue-700 font-medium text-sm">
-                Sign Up
+                <Link to="/">Sign Up</Link>
               </h6>
             </div>
           </form>

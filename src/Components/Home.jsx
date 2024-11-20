@@ -6,6 +6,7 @@ import Testimonial from './Testimonial';
 import Blog from './BlogCard';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Experience from './Experience';
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
         </div>
       </div>
       <TourismSection />
+      {/* <Experience/> */}
       <TourPackagesSection />
       <Testimonial />
       <Blog />
