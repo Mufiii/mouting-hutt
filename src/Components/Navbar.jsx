@@ -18,11 +18,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 left-0 z-50 m-0 px-8 flex items-center justify-between transition-all duration-300 ${
-        isScrolled
+      className={`fixed w-full top-0 left-0 z-50 m-0 px-8 flex items-center justify-between transition-all duration-300 ${isScrolled
           ? 'bg-white text-black shadow-lg'
           : 'bg-transparent text-white'
-      }`}
+        }`}
       style={{ height: '85px' }}
     >
       {/* Logo */}
@@ -75,11 +74,10 @@ const Navbar = () => {
         <div className="flex space-x-4">
           <a
             href="/"
-            className={`py-2 px-4 rounded-full transition ${
-              isScrolled
+            className={`py-2 px-4 rounded-full transition ${isScrolled
                 ? 'bg-gray-100 text-black hover:bg-gray-200'
                 : 'bg-slate-100 bg-opacity-40 text-white hover:bg-cyan-700 hover:text-black'
-            }`}
+              }`}
           >
             Login / Signup
           </a>

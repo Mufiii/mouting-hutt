@@ -5,10 +5,7 @@ const Experience = () => {
     <div>
       <section class=" bg-white sm:py-16 lg:py-20">
         <div class=" mx-auto sm:px-6  max-w-7xl">
-          <div class="max-w-md mx-auto text-left">
-            <h2 class="text-4xl font-bold text-gray-900 sm:text-3xl">Popular Experiences</h2>
-            <p class="mt-4 text-base font-normal leading-7 text-gray-600">Browse exciting, adventurous and fun-filled activities for your holiday.</p>
-          </div>
+
 
           <div class="grid grid-cols-2 gap-6 mt-10 lg:mt-16 lg:gap-4 lg:grid-cols-4">
             <div class="relative group">

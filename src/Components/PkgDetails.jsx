@@ -48,7 +48,7 @@ const PkgDetails = () => {
 
   return (
     <div>
-       <div className="fixed top-10 left-0 right-0 z-10">
+      <div className="fixed top-10 left-0 right-0 z-10">
         <Navbar />
       </div>
       <div className="bg-gradient-to-b from-blue-700 to-blue-900 text-white py-16">
@@ -61,7 +61,7 @@ const PkgDetails = () => {
           {packages.map((pkg, index) => (
             <div key={index} className="w-full sm:w-72 md:w-80 bg-gray-100 text-black rounded-lg shadow-lg overflow-hidden">
               <img src={pkg.image} alt={pkg.title} className="w-full h-48 object-cover" />
-              
+
               <div className="p-6">
                 <h3 className="text-lg font-bold">{pkg.title}</h3>
                 <p className="text-sm text-gray-600">{pkg.duration}</p>
